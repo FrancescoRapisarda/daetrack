@@ -1,0 +1,67 @@
+<div class="card dae-card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-10 ps-3 pe-0">
+                <span class="label-span">ID DAE:</span>
+                <span class="span-value">{{ data.id }}</span>
+            </div>
+
+            <div class="col-2 close-col">
+                <img src="assets/components/close-white.png" (click)="closeCard()"/>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="assets/images/background-registration.jpg" class="card-img-top" alt="DAE image">
+        <div class="model-row">
+            <span class="label-span">{{'model' | translate}}:</span>
+            <span class="span-value">{{ data.model }}</span>
+        </div>
+    </div>
+
+    <div class="card-body">
+        <div class="card-body-text-container" style="padding-bottom: 0;">
+            <div class="row">
+                <span class="label-span">{{'address' | translate}}:</span>
+                <span class="span-value">{{ data.address }}</span>
+            </div>
+    
+            <div class="row">
+                <span class="label-span">{{'site' | translate}}:</span>
+                <span class="span-value upper-case-text">{{ data.site }}</span>
+            </div>
+    
+            <div class="row" style="margin-bottom: 0;">
+                <span class="label-span">{{'status' | translate}}:</span>
+                <span class="span-value">{{ data.status }}</span>
+            </div>
+        </div>
+
+        <div class="separation-bar-container">
+            <div class="separation-bar"></div>
+        </div>
+
+        <div class="card-body-text-container" style="padding-top: 0;">
+            <div class="row">
+                <span class="label-span">{{'lastMaintenance' | translate}}:</span>
+                <span class="span-value">{{ data.last_maintenance }}</span>
+            </div>
+    
+            <div class="row">
+                <span class="label-span">{{'nextMaintenance' | translate}}:</span>
+                <span class="span-value">{{ data.next_maintenance }}</span>
+            </div>
+    
+            <div class="row notes-container">
+                <p>{{'notes' | translate}}:</p>
+                <textarea class="form-control" rows="12" readonly>{{ data.notes }}</textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-footer">
+        <img src="assets/icons/product-details.png" alt="Product details"/>
+        <p class="upper-case-text">{{'goToCard'| translate}}</p>
+    </div>
+</div>

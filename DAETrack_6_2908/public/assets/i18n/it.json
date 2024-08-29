@@ -1,0 +1,10 @@
+{
+    "model": "Modello",
+    "address": "Indirizzo",
+    "site": "Sito",
+    "status": "Stato",
+    "lastMaintenance": "Ultima manutenzione",
+    "nextMaintenance": "Prossima manutenzione",
+    "notes": "Note",
+    "goToCard": "Vai alla scheda"
+}

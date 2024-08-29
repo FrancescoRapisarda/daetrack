@@ -1,0 +1,10 @@
+{
+    "model": "Model",
+    "address": "Address",
+    "site": "Site",
+    "status": "Status",
+    "lastMaintenance": "Last maintenance",
+    "nextMaintenance": "Next maintenance",
+    "notes": "Notes",
+    "goToCard": "Go to card"
+}
