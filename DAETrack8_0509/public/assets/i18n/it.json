@@ -1,0 +1,20 @@
+{
+    "idDAE": "ID DAE",
+    "model": "Modello",
+    "address": "Indirizzo",
+    "site": "Sito",
+    "status": "Stato",
+    "lastMaintenance": "Ultima manutenzione",
+    "nextMaintenance": "Prossima manutenzione",
+    "notes": "Note",
+    "goToCard": "Vai alla scheda",
+
+    "registration" : "Registrazione",
+    "name" : "Nome",
+    "last_name" : "Cognome",
+    "phone" : "Telefono",
+    "confirm_password":"Conferma password",
+    "privacyPolicy":"Dichiaro di aver letto l'informativa sulla Privacy",
+    "sendRegistrationMessage":"Abbiamo inviato un codice di sicurezza al numero",
+    "next" : "Avanti"
+}

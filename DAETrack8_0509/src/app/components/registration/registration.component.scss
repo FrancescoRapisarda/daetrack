@@ -1,0 +1,243 @@
+$light-blue-color: #0A9BD8;
+$blue: #1E9BD9;
+$gray: #303031;
+
+.registration-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  padding-right: 240px;
+  background-image: url('../../../../public/assets/images/background-registration.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 1);
+    z-index: -1;
+  }
+
+  flex-direction: row;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.side-img {
+  width: 480px;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 90px;
+}
+
+.registration-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 500px;
+  height: 870px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border: 5px solid $light-blue-color;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Montserrat-Light", sans-serif;
+  margin-left: auto; 
+
+  p {
+    color: #A5A3A3;
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 25px;
+  }
+
+  img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 400px;
+  }
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.input-group .daetrack-personal-data-white, .daetrack-phone,.daetrack-mail, .daetrack-password-white {
+  position: absolute;
+  left: 14px; 
+  color: #ccc; 
+  pointer-events: none;
+}
+.daetrack-personal-data-white::before, .daetrack-phone::before,.daetrack-mail::before, .daetrack-password-white::before{
+  color: $light-blue-color;
+  font-size: 23px;
+}
+
+.input-group input {
+  width: 100%;
+  padding-left: 50px;
+  box-sizing: border-box; 
+  border-radius: 10px !important;
+  border: 2px solid #ccc;
+}
+
+/* stile del placeholder */
+.input-group input::placeholder {
+  color: $gray; 
+  opacity: 0.8; 
+}
+
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  input[type="checkbox"] {
+    margin: 0;
+  }
+
+  #privacy {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+.no-spinner {
+  &::-webkit-inner-spin-button, 
+  &::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  -moz-appearance: textfield;
+}
+
+  button {
+    align-self: center; 
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: $light-blue-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 2px 5px 5px 0 black;
+
+    &:hover {
+      background-color: #118bc8;
+    }
+  }
+
+  hr {
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 0.1px solid $light-blue-color;
+    border-radius: 50%;
+    opacity: 50;
+  }
+}
+.otp-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+
+  label {
+    margin-bottom: 5px; 
+    font-size: 25px;
+    color: gray;
+  }
+  .otp-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  input {
+    width: 45px;
+    height: 90px; 
+    margin: 0 10px;
+    padding: 5px;
+    text-align: center; 
+    box-sizing: border-box; 
+    border-radius: 5px;
+    border: 2px solid $light-blue-color;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .otp-message{
+  margin-top: 5px;
+  font-family: "Roboto";
+  font-size: 22px;
+  color: black;
+  }
+
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  width: 100%; 
+}
+
+
+/* Translation Button region */
+.container-translation-button {
+  display: flex;
+  position: absolute;
+  width: fit-content;
+  top: 15px;
+  right: 15px;
+  gap: 20px;
+
+  img {
+    width: 22px;
+    height: 22px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.8px $light-blue-color;
+
+    &:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 0 0.8px $light-blue-color;
+    }
+  }
+}

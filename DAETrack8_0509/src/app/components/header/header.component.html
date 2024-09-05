@@ -1,0 +1,29 @@
+<div id="header-container">
+    <div class="row">
+        <div class="col col-3 search-bar"><p>Search Bar</p></div>
+
+        <div class="col col-6 logo-col">
+            <img src="assets/logo/logo-DAETrack.png" alt="Logo"/>
+        </div>
+
+        <div class="col col-3 icons-col">
+
+            <div class="container icons-container">
+                <div class="container flag-container">
+                    <img id="ita-flag" src="assets/icons/ita-icon.png" (click)="changeLang('it')"/>
+                    <img src="assets/icons/eng-icon.png" (click)="changeLang('en')"/>
+                </div>
+                <img id="profile-black" src="assets/icons/profile-black.png"/>
+                <img src="assets/icons/menu.png"/>
+            </div>
+        </div>
+    </div>
+
+    <div id="light-blue-bar"></div>
+</div>
+
+
+<!--<button type="button" (click)="changeLang('en')" class="btn btn-secondary">En</button>
+<button type="button" (click)="changeLang('it')" class="btn btn-primary">It</button>
+
+<h1>{{'hello' | translate}}</h1>-->

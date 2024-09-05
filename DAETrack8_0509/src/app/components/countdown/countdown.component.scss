@@ -1,0 +1,40 @@
+.countdown-timer {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #333;
+
+  .countdown-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+    .countdown-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto";
+    font-size: 40px;
+    font-weight: 100;
+}
+#countdown-image {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+    height: auto;
+    animation: rotateAnimation 4s infinite linear;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+}
+

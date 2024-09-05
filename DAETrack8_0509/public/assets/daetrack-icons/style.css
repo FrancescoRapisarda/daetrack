@@ -1,0 +1,282 @@
+@font-face {
+  font-family: 'DAETrack';
+  src:  url('fonts/DAETrack.eot?fs1g0r');
+  src:  url('fonts/DAETrack.eot?fs1g0r#iefix') format('embedded-opentype'),
+    url('fonts/DAETrack.ttf?fs1g0r') format('truetype'),
+    url('fonts/DAETrack.woff?fs1g0r') format('woff'),
+    url('fonts/DAETrack.svg?fs1g0r#DAETrack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="daetrack-"], [class*=" daetrack-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'DAETrack' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.daetrack-lock-white:before {
+  content: "\e900";
+  color: #fff;
+}
+.daetrack-lock-bue:before {
+  content: "\e901";
+  color: #059cda;
+}
+.daetrack-filter:before {
+  content: "\e902";
+  color: #fff;
+}
+.daetrack-Email-white:before {
+  content: "\e903";
+  color: #fff;
+}
+.daetrack-pin .path1:before {
+  content: "\e904";
+  color: rgb(250, 166, 36);
+}
+.daetrack-pin .path2:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.daetrack-pin .path3:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(250, 166, 36);
+}
+.daetrack-icon:before {
+  content: "\e93c";
+  color: #fff;
+}
+.daetrack-mail:before {
+  content: "\e93d";
+  color: #059cda;
+}
+.daetrack-menu:before {
+  content: "\e93e";
+}
+.daetrack-notification-circle .path1:before {
+  content: "\e93f";
+  color: rgb(255, 255, 254);
+}
+.daetrack-notification-circle .path2:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(50, 50, 50);
+}
+.daetrack-notification:before {
+  content: "\e941";
+  color: #fff;
+}
+.daetrack-password-white:before {
+  content: "\e942";
+  color: #fff;
+}
+.daetrack-password .path1:before {
+  content: "\e943";
+  color: rgb(6, 156, 218);
+}
+.daetrack-password .path2:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.daetrack-password .path3:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.daetrack-password .path4:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.daetrack-personal-data-white:before {
+  content: "\e947";
+  color: #fff;
+}
+.daetrack-personal-data .path1:before {
+  content: "\e948";
+  color: rgb(5, 155, 217);
+}
+.daetrack-personal-data .path2:before {
+  content: "\e949";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.daetrack-personal-data .path3:before {
+  content: "\e94a";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.daetrack-personal-data .path4:before {
+  content: "\e94b";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.daetrack-personal-data .path5:before {
+  content: "\e94c";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.daetrack-personal-data .path6:before {
+  content: "\e94d";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.daetrack-personal-data .path7:before {
+  content: "\e94e";
+  margin-left: -1em;
+  color: rgb(3, 146, 218);
+}
+.daetrack-personal-data .path8:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(3, 146, 218);
+}
+.daetrack-personal-data .path9:before {
+  content: "\e950";
+  margin-left: -1em;
+  color: rgb(3, 146, 218);
+}
+.daetrack-personal-data .path10:before {
+  content: "\e951";
+  margin-left: -1em;
+  color: rgb(3, 146, 218);
+}
+.daetrack-personal-data .path11:before {
+  content: "\e952";
+  margin-left: -1em;
+  color: rgb(3, 146, 217);
+}
+.daetrack-personal-data .path12:before {
+  content: "\e953";
+  margin-left: -1em;
+  color: rgb(3, 146, 218);
+}
+.daetrack-phone-white:before {
+  content: "\e954";
+  color: #fff;
+}
+.daetrack-phone:before {
+  content: "\e955";
+  color: #089cd9;
+}
+.daetrack-plus .path1:before {
+  content: "\e956";
+  color: rgb(5, 156, 217);
+}
+.daetrack-plus .path2:before {
+  content: "\e957";
+  margin-left: -1em;
+  color: rgb(3, 146, 215);
+}
+.daetrack-plus .path3:before {
+  content: "\e958";
+  margin-left: -1em;
+  color: rgb(1, 145, 215);
+}
+.daetrack-plus .path4:before {
+  content: "\e959";
+  margin-left: -1em;
+  color: rgb(1, 145, 215);
+}
+.daetrack-plus .path5:before {
+  content: "\e95a";
+  margin-left: -1em;
+  color: rgb(1, 145, 215);
+}
+.daetrack-plus .path6:before {
+  content: "\e95b";
+  margin-left: -1em;
+  color: rgb(1, 145, 215);
+}
+.daetrack-plus .path7:before {
+  content: "\e95c";
+  margin-left: -1em;
+  color: rgb(1, 145, 215);
+}
+.daetrack-plus .path8:before {
+  content: "\e95d";
+  margin-left: -1em;
+  color: rgb(1, 145, 215);
+}
+.daetrack-plus .path9:before {
+  content: "\e95e";
+  margin-left: -1em;
+  color: rgb(1, 145, 215);
+}
+.daetrack-plus .path10:before {
+  content: "\e95f";
+  margin-left: -1em;
+  color: rgb(3, 150, 216);
+}
+.daetrack-plus .path11:before {
+  content: "\e960";
+  margin-left: -1em;
+  color: rgb(5, 156, 217);
+}
+.daetrack-profile-black:before {
+  content: "\e961";
+}
+.daetrack-profile-blue:before {
+  content: "\e962";
+  color: #059cda;
+}
+.daetrack-search .path1:before {
+  content: "\e963";
+  color: rgb(7, 155, 217);
+}
+.daetrack-search .path2:before {
+  content: "\e964";
+  margin-left: -1em;
+  color: rgb(253, 253, 253);
+}
+.daetrack-search .path3:before {
+  content: "\e965";
+  margin-left: -1em;
+  color: rgb(7, 155, 217);
+}
+.daetrack-trained-people:before {
+  content: "\e966";
+  color: #fff;
+}
+.daetrack-product-details:before {
+  content: "\e967";
+  color: #fff;
+}
+.daetrack-trainers:before {
+  content: "\e968";
+  color: #fff;
+}
+.daetrack-training-bodies:before {
+  content: "\e969";
+  color: #fff;
+}
+.daetrack-settings:before {
+  content: "\e96a";
+  color: #fff;
+}
+.daetrack-less:before {
+  content: "\e96b";
+  color: #049cda;
+}
+.daetrack-close-white:before {
+  content: "\e96c";
+  color: #fff;
+}
+.daetrack-close-blue:before {
+  content: "\e96d";
+  color: #099bd8;
+}

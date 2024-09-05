@@ -1,0 +1,81 @@
+<div class="registration-container">
+  <div class="container-translation-button">
+    <img id="ita-flag" src="assets/icons/ita-icon.png" (click)="changeLang('it')" />
+    <img id="en-flag" src="assets/icons/eng-icon.png" (click)="changeLang('en')" />
+  </div>
+
+  <div class="image-container col-6">
+    <img class="side-img" src="assets/logo/logo-DAETrack.png" />
+  </div>
+
+  <div class="registration-box col-6">
+    <div>
+      <img id="registration-img" src="assets/images/registration-infographic.png" />
+    </div>
+    <div>
+      <p class="uppercase">{{ 'registration' | translate }}</p>
+    </div>
+
+    @if(formEmpty) {
+      <form>
+  <div class="input-group">
+    <i class="daetrack-personal-data-white"></i>
+    <input type="text" [(ngModel)]="userRegisterObj.Name" name="name" placeholder="{{ 'name' | translate }}" required />
+  </div>
+
+  <div class="input-group">
+    <i class="daetrack-personal-data-white"></i>
+    <input type="text" [(ngModel)]="userRegisterObj.Surname" name="surname" placeholder="{{ 'last_name' | translate }}" required />
+  </div>
+
+  <div class="input-group">
+    <i class="daetrack-phone"></i>
+    <input type="text" [(ngModel)]="userRegisterObj.phone" name="phone" placeholder="{{ 'phone' | translate }}" required class="no-spinner" (blur)=validatePhone()/>
+  </div>
+
+  <div class="input-group">
+    <i class="daetrack-mail"></i>
+    <input type="email" [(ngModel)]="userRegisterObj.email" name="email" placeholder="Email" required />
+  </div>
+  <hr/>
+  <div class="input-group">
+    <i class="daetrack-password-white"></i>
+    <input type="password" [(ngModel)]="userRegisterObj.password" name="password" placeholder="Password" required />
+  </div>
+
+ <div class="input-group">
+    <i class="daetrack-password-white"></i>
+    <input type="password" [(ngModel)]="userRegisterObj.confirmPassword" name="confirmPassword" placeholder="{{ 'confirm_password' | translate }}" required />
+  </div>
+
+  <div class="checkbox-container">
+    <input type="checkbox" [(ngModel)]="userRegisterObj.privacy" name="privacy" id="privacy" required />
+    <p id="privacy">{{ "privacyPolicy" | translate }}</p>
+  </div>
+
+  <button type="button" (click)="onRegister()">{{ 'next' | translate }}</button>
+</form>
+
+    } @else {
+      <form>
+        <div class="otp-input">
+          <label>OTP</label>
+          <div class="otp-input-container">
+            <input type="text" maxlength="1" (input)="moveFocus($event, 1)" required />
+            <input type="text" maxlength="1" (input)="moveFocus($event, 2)" required />
+            <input type="text" maxlength="1" (input)="moveFocus($event, 3)" required />
+            <input type="text" maxlength="1" (input)="moveFocus($event, 4)" required />
+            <input type="text" maxlength="1" (input)="moveFocus($event, 5)" required />
+          </div>
+          <p class="otp-message">{{ 'sendRegistrationMessage' | translate }} {{userRegisterObj.phone}}</p>
+  </div>
+
+        <div class="countdown-container">
+          <app-countdown (timerFinished)="onTimerFinished()"></app-countdown>
+        </div>
+
+        <button type="button" (click)="formEmpty = true">{{ 'next' | translate }}</button>
+      </form>
+    }
+  </div>
+</div>
